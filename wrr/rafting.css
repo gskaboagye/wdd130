@@ -1,0 +1,69 @@
+/* Root Variables */
+:root {
+    --primary-color: #B3A4D7; /* Light Purple */
+    --secondary-color: #4A90E2; /* Blue */
+    --accent1-color: #F5A623; /* Orange */
+    --accent2-color: #D0021B; /* Red */
+    --text-color: #333;
+    --background-color: #fff;
+}
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+header img {
+    max-width: 100px;
+    height: auto;
+    margin-left: 20px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: var(--accent1-color);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: url('path-to-your-hero-image.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 36
