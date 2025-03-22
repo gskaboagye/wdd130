@@ -1,9 +1,7 @@
 /* Root Variables */
 :root {
-    --primary-color: #B3A4D7; /* Light Purple */
-    --secondary-color: #4A90E2; /* Blue */
-    --accent1-color: #F5A623; /* Orange */
-    --accent2-color: #D0021B; /* Red */
+    --primary-color: #B3A4D7;
+    --secondary-color: #4A90E2;
     --text-color: #333;
     --background-color: #fff;
 }
@@ -17,18 +15,16 @@ body {
     padding: 0;
 }
 
-/* Header Styles */
+/* Header */
 header {
     background-color: var(--primary-color);
-    padding: 20px;
-    text-align: center;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-/* Logo */
-header img {
+.logo {
     max-width: 100px;
     height: auto;
     margin-left: 20px;
@@ -37,84 +33,94 @@ header img {
 /* Navigation */
 nav {
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 
 nav a {
-    color: #fff;
+    color: black;
     text-decoration: none;
     font-size: 18px;
-    padding: 10px 15px;
+    padding: 10px;
+    border: 1px solid black;
     border-radius: 5px;
 }
 
 nav a:hover {
-    background-color: var(--accent1-color);
+    background-color: var(--secondary-color);
+    color: white;
 }
 
 /* Hero Section */
 .hero {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    background: url('rafting59_600.jpg') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    color: white;
+    background: url('rafting-hero.jpg') center/cover no-repeat;
+    padding: 80px 0;
+    color: black;
+    position: relative;
 }
 
 .hero h1 {
-    position: absolute;
-    font-size: 36px;
-    width: 80%;
-    left: 50%;
-    transform: translateX(-50%);
+    font-size: 32px;
 }
 
-/* Hero Article */
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    width: 80%;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 15px;
-    border-radius: 5px;
-}
-
-.hero article img {
-    float: right;
-    margin-left: 10px;
-}
-
-/* Image Gallery */
-.image-gallery {
+/* Gallery Section */
+.gallery {
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
 }
 
-.image-gallery img {
+.gallery div {
+    text-align: center;
+}
+
+.gallery img {
     width: 150px;
     height: auto;
-    border-radius: 5px;
+}
+
+/* Large Image with Overlay */
+.large-image {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.large-image img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    width: 300px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.overlay h2 {
+    margin-top: 0;
 }
 
 /* Footer */
 footer {
+    background-color: var(--primary-color);
     text-align: center;
     padding: 20px;
-    background-color: var(--primary-color);
     color: white;
 }
 
-.social-icons a {
-    text-decoration: none;
-    margin: 0 10px;
+.social-icons {
+    margin-top: 10px;
 }
 
-.social-icons img {
+.social-icons a img {
     width: 30px;
     height: auto;
+    margin: 0 5px;
 }
